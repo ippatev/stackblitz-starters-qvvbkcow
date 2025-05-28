@@ -1,47 +1,14 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
-    <meta name="robots" content="noindex,follow" />
-
-    <title>Fancytree - Example</title>
-
-    <script src="../lib/jquery.js"></script>
-    <script src="../src/jquery-ui-dependencies/jquery.fancytree.ui-deps.js"></script>
-
-    <link href="../src/skin-win8/ui.fancytree.css" rel="stylesheet" />
-    <script src="../src/jquery.fancytree.js"></script>
-
-    <!-- Add code to initialize the tree when the document is loaded: -->
-    <script type="text/javascript">
-      $(function () {
-        $('#btnExpand').click(function () {
-          var $tree = parent.$('#tree');
-          var rootNode = parent.$.ui.fancytree.getTree('#tree').getRootNode();
-          $.ui.fancytree.debug('rootNode: %o', rootNode);
-          $.ui.fancytree.debug('rootNode: %o', rootNode.visit);
-          parent.$.ui.fancytree
-            .getTree('#tree')
-            .getRootNode()
-            .visit(function (node) {
-              node.toggleExpanded();
-            });
-        });
-      });
-    </script>
-  </head>
-
-  <body class="example">
-    <p class="description">
-      This page lives inside an iframe<br />
-      Click a link in the tree to load some content here.
-      <br />
-      This button demonstrates, ho to access a tree in another frame:
-      <button id="btnExpand">Toggle tree</button>
-      <br />
-      View the source of
-      <a href="./sample-iframe.html" target="_blank">this iframe content</a>, to
-      see how it can be done.
-    </p>
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>Lorem ipsum dolor</h1>
+        <p>, sit amet consectetur adipisicing elit. Magnam, magni eaque blanditiis quisquam dolore debitis laudantium aliquid id tempora, fugit, voluptas tempore voluptates nihil vel dolorem repellendus harum voluptatem minima.</p>
+    </div>
+</body>
 </html>
